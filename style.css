@@ -1,62 +1,170 @@
 body{ 
-	background: #655;
-	background-image: radial-gradient(tan 30%, transparent 0), 
-                  radial-gradient(tan 10%, transparent 0), 
-                  radial-gradient(black 5%, transparent 0);
+	background: rgba(102, 85, 85, 0.5);
+	background-image: radial-gradient(rgba(210, 180, 140, 0.5) 30%, transparent 0), 
+                  radial-gradient(rgba(210, 180, 140, 0.5) 10%, transparent 0), 
+                  radial-gradient(rgba(0, 0, 0, 0.5) 5%, transparent 0);
 	background-size: 100px 100px;
 	background-position: 0 0, 50px 50px, 0px 50px;
 }
 
-#wrapper{ 
-
-	min-width: 1200px;
-	max-width: 1400px;
-	width: 80%;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-
-nav{
-	font-weight: bold;
-	float: none;
-	width: auto;
-	padding-left: 2em;
-	padding-top: 1.5em;
-}
-
-nav a{
-	display: block;
+.navbar {
+	overflow: hidden;
 	text-align: center;
-	color: #FFE066;
-	font-weight: bold;
-	border: 3px solid #993300;
-	padding: 0.2em;
-	margin-left: 0.3em;
+	margin-left: 35%;
+	margin-top: 50px;
+}
+
+.navbar a {
 	float: left;
-	width: 23%;
-	margin-bottom: 1em;
+	font-size: 30px;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
 	text-decoration: none;
 }
 
-nav a:link{
-	background-color: #000000;
+.subnav {
+	float: left;
+	overflow: hidden;
 }
 
-nav a:hover{
-	background-color: #FF884D;
-	color: #364437;
+.subnav .subnavbtn {
+	font-size: 30px;
+	border: none;
+	outline: none;
+	color: white;
+	padding: 14px 16px;
+	background-color: inherit;
+	font-family: inherit;
+	margin: 0;
 }
 
-header a:hover{
-	color: red;
+.navbar a:hover, .subnav:hover .subnavbtn {
+	background-color: white;
+	color: black;
+	border-radius: 30%;
 }
 
-main a:hover{
-	color: red;
+.subnavContent {
+	display: none;
+	position: absolute;
+	margin-left: 15%;
+	left: 0;
+	width: 100%;
+	z-index: 1;
 }
 
-nav ul{
-	list-style-type: none;
-	padding-left: 0;
+.subnavContent a {
+	float: left;
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
 }
+
+.subnavContent a:hover {
+	background-color: tan;
+	color: black;
+}
+
+.subnav:hover .subnavContent {
+	display: block;
+}
+
+#logo {
+	position: absolute;
+	left: 10%;
+}
+
+.slideshow-container {
+	max-width: 1000px;
+	position: relative;
+	margin: auto;
+	text-align: center;
+	margin-top: 10em;
+}
+
+.mySlides {
+	display: none;
+}
+
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: black;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+}
+
+.next {
+	right: 11em;
+	border-radius: 3px 0 0 3px;
+}
+
+.prev {
+	left: 11em;
+}
+
+.prev:hover, .next:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+	color: tan;
+}
+
+.text {
+	color: #655;
+	font-size: 30px;
+	font-weight: bold;
+	position: absolute;
+	top: 40px;
+	width: 100%;
+	text-align: center;
+	text-shadow: 1px 1px tan, -1px -1px tan, 
+				 1px -1px tan, -1px 1px tan;
+}
+
+.numbertext {
+	color: rgba(0, 0, 0, 0);
+}
+
+.dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+	background-color: #717171;
+}
+
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+	from {opacity: .4}
+	to {opacity: 1}
+}
+
+@keyframes fade {
+	from {opacity: .4}
+	to {opacity: 1}
+}
+
+img {
+	border-radius: 20%;
+}
+
