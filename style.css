@@ -211,7 +211,7 @@ img {
 	float: left;
 	margin-right: 0;
 	position: relative;
-	top: -36em;
+	top: -36.5em;
 	left: 2em;
 }
 
@@ -220,8 +220,17 @@ img {
 	float: right;
 	margin-right: 0;
 	position: relative;
-	top: -31em;
+	top: -32em;
 	right: -29em;
+}
+
+#cardholderDesImage {
+	border-radius: 100%;
+	float: left;
+	margin-right: 0;
+	position: relative;
+	top: -64.5em;
+	left: 2em;
 }
 
 #backgroundWrist {
@@ -262,6 +271,17 @@ img {
 	top: -27em;
 }
 
+#backgroundCardholder {
+	width:500px;
+	height:600px;
+	border-radius: 100%;
+	background-color: tan;
+	float: left;
+	position: relative;
+	left: -30em;
+	top: -28em;
+}
+
 #wrist {
 	width: 70em;
 	height: 40em;
@@ -277,10 +297,15 @@ img {
 	margin-top: 2em;
 	width: 70em;
 	height: 40em;
-	background-color: teal;
 }
 
 #makeupDes {
+	margin-top: 2em;
+	width: 70em;
+	height: 40em;
+}
+
+#cardholderDes {
 	margin-top: 2em;
 	width: 70em;
 	height: 40em;
@@ -334,6 +359,19 @@ img {
 	margin-left: 0;
 	right: 0;
 	top: -67em;
+	position: relative;	
+}
+
+#cardholderDesc {
+	float: right;
+	text-align: center;
+	background-color: purple;
+	width: 30em;
+	height: 30em;
+	margin-top: 2em;
+	margin-left: 0;
+	right: 0;
+	top: -63em;
 	position: relative;	
 }
 
