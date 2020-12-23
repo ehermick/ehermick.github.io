@@ -1,3 +1,7 @@
+* {
+	box-sizing: border-box;
+}
+
 body{ 
 	background: rgba(102, 85, 85, 0.5);
 	background-image: radial-gradient(rgba(210, 180, 140, 0.5) 30%, transparent 0), 
@@ -166,5 +170,170 @@ body{
 
 img {
 	border-radius: 20%;
+}
+
+#wrapper {
+		min-width: 1200px;
+	max-width: 1400px;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#descriptions {
+	width: 90%;
+	height: 100em;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10em;
+}
+
+#wristDesImage {
+	border-radius: 100%;
+	float: left;
+	position: relative;
+	margin-left: 2em;
+	margin-top: 1em;
+}
+
+#toteDesImage {
+	border-radius: 100%;
+	float: right;
+	margin-right: 0;
+	position: relative;
+	right: -29em;
+	top: 1em;
+}
+
+#purseDesImage {
+	border-radius: 100%;
+	float: left;
+	margin-right: 0;
+	position: relative;
+	top: -36em;
+	left: 2em;
+}
+
+#makeupDesImage {
+	border-radius: 100%;
+	float: right;
+	margin-right: 0;
+	position: relative;
+	top: -31em;
+	right: -29em;
+}
+
+#backgroundWrist {
+	width:500px;
+	height:600px;
+	border-radius: 100%;
+	background-color: tan;
+	position: absolute;
+}
+
+#backgroundTote {
+	width:500px;
+	height:600px;
+	border-radius: 100%;
+	background-color: tan;
+	float: right;
+	position: relative;
+}
+
+#backgroundPurse {
+	width:500px;
+	height:600px;
+	border-radius: 100%;
+	background-color: tan;
+	float: left;
+	position: relative;
+	left: -30em;
+}
+
+#backgroundMakeup {
+	width:500px;
+	height:600px;
+	border-radius: 100%;
+	background-color: tan;
+	float: right;
+	position: relative;
+	left: 0em;
+	top: -27em;
+}
+
+#wrist {
+	width: 70em;
+	height: 40em;
+}
+
+#toteDes {
+	margin-top: 2em;
+	width: 70em;
+	height: 40em;
+}
+
+#purseDes {
+	margin-top: 2em;
+	width: 70em;
+	height: 40em;
+	background-color: teal;
+}
+
+#makeupDes {
+	margin-top: 2em;
+	width: 70em;
+	height: 40em;
+	background-color: pink;
+}
+
+#wristDesc {
+	float: right;
+	text-align: center;
+	background-color: green;
+	width: 30em;
+	height: 30em;
+	right: 14em;
+	margin-right: 0;
+	margin-top: 5em;
+}
+
+#toteDesc {
+	float: left;
+	text-align: center;
+	background-color: purple;
+	width: 30em;
+	height: 30em;
+	margin-top: 2em;
+	margin-left: 0;
+	right: 0;
+	top: -34em;
+	position: relative;
+}
+
+#purseDesc {
+	float: right;
+	text-align: center;
+	background-color: purple;
+	width: 30em;
+	height: 30em;
+	margin-top: 2em;
+	margin-left: 0;
+	right: 0;
+	top: -34em;
+	position: relative;	
+}
+
+#makeupDesc {
+	float: left;
+	text-align: center;
+	background-color: red;
+	width: 30em;
+	height: 30em;
+	margin-top: 2em;
+	margin-left: 0;
+	right: 0;
+	top: -67em;
+	position: relative;	
 }
 
