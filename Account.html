@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Dashboard - Brand</title>
+    <title>Profile - Brand</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
@@ -44,13 +44,13 @@
                     <li class="nav-item dropdown"><a class="dropdown-toggle nav-link text-center" aria-expanded="false" data-toggle="dropdown" href="#">Services</a>
                         <div class="dropdown-menu"><a class="dropdown-item" href="Internal.html">Internal</a><a class="dropdown-item" href="External.html">External</a><a class="dropdown-item" href="Rental.html">Rental</a></div>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="Account.html"><span>Account</span></a><a class="nav-link" href="Login.html"><span>Login</span></a><a class="nav-link" href="Signup.html"><span>Signup</span></a></li>
+                    <li class="nav-item"><a class="nav-link active" href="Account.html"><span>Account</span></a><a class="nav-link" href="Login.html"><span>Login</span></a><a class="nav-link" href="Signup.html"><span>Signup</span></a></li>
                 </ul>
                 <div class="text-center d-none d-md-inline"></div>
             </div>
         </nav>
         <div class="d-flex flex-column" id="content-wrapper">
-            <div id="content" style="background: #65ccb8;">
+            <div id="content">
                 <nav class="navbar navbar-light navbar-expand bg-white shadow mb-4 topbar static-top">
                     <div class="container-fluid"><button class="btn btn-link d-md-none rounded-circle mr-3" id="sidebarToggleTop" type="button"><i class="fas fa-bars"></i></button>
                         <form class="form-inline d-none d-sm-inline-block mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
@@ -106,52 +106,133 @@
                         </ul>
                     </div>
                 </nav>
-                <h2 style="margin-top: 23px;color: var(--white);text-align: center;padding-top: 20px;font-style: normal;font-weight: 800;text-shadow: 0px 0px 13px #3b945e;font-size: 64px;">Best Community Service</h2>
-                <div class="container" style="margin-left: 97px;margin-top: 65px;">
-                    <div class="row" style="margin-bottom: 193px;">
-                        <div class="col-md-12" style="margin-bottom: 90px;height: 292px;">
-                            <div class="simple-slider">
-                                <div class="swiper-container">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide" style="background: url(&quot;assets/img/homecare.jpg&quot;) center center / contain no-repeat;">
-                                            <h2 style="margin-top: 415px;color: #3b945e;text-align: center;padding-top: 20px;font-style: normal;font-weight: 800;text-shadow: 0px 0px 5px var(--light);font-size: 52px;">External Services</h2>
-                                        </div>
-                                        <div class="swiper-slide" style="background: url(&quot;assets/img/weddings.jpg&quot;) center center / contain no-repeat;">
-                                            <h2 style="margin-top: 415px;color: #3b945e;text-align: center;padding-top: 20px;font-style: normal;font-weight: 800;text-shadow: 0px 0px 5px var(--light);font-size: 52px;">Internal Services</h2>
-                                        </div>
-                                        <div class="swiper-slide" style="background: url(&quot;assets/img/spanish.jpg&quot;) center center / contain no-repeat;">
-                                            <h2 style="margin-top: 415px;color: #3b945e;text-align: center;padding-top: 20px;font-style: normal;font-weight: 800;text-shadow: 0px 0px 5px var(--light);font-size: 52px;">Rental Services</h2>
+                <div class="container-fluid" style="background: #65ccb8;margin-top: -23px;height: 809px;">
+                    <h2 class="text-left" style="margin-top: 23px;color: var(--white);text-align: left;padding-top: 10px;">Account</h2>
+                    <div class="row mb-3">
+                        <div class="col-lg-4">
+                            <div class="card mb-3">
+                                <div class="card-body text-center shadow" style="height: 335px;"><img class="rounded-circle mb-3 mt-4" src="assets/img/avatars/avatar1.jpeg" width="160" height="160">
+                                    <div class="mb-3"><button class="btn btn-primary btn-sm" type="button">Change Photo</button></div>
+                                </div>
+                            </div>
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="text-primary font-weight-bold m-0">Payment Information</h6>
+                                </div>
+                                <div class="card-body" style="width: 1065px;margin-left: -258px;height: 284px;">
+                                    <div class="row .payment-dialog-row">
+                                        <div class="col-12 col-md-4 offset-md-4" style="margin-left: 277.7px;">
+                                            <div class="card credit-card-box" style="margin-left: -28px;">
+                                                <div class="card-body" style="height: 253px;margin-top: -11px;">
+                                                    <form id="payment-form">
+                                                        <div class="form-row">
+                                                            <div class="col-12">
+                                                                <div class="form-group"><label for="cardNumber">Card number </label>
+                                                                    <div class="input-group"><input class="form-control" type="tel" id="cardNumber" required="" placeholder="Valid Card Number">
+                                                                        <div class="input-group-append"><span class="input-group-text"><i class="fa fa-credit-card"></i></span></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-row">
+                                                            <div class="col-7">
+                                                                <div class="form-group"><label for="cardExpiry"><span>expiration </span><span>EXP </span> date</label><input class="form-control" type="tel" id="cardExpiry" required="" placeholder="MM / YY"></div>
+                                                            </div>
+                                                            <div class="col-5 pull-right">
+                                                                <div class="form-group"><label for="cardCVC">cv code</label><input class="form-control" type="tel" id="cardCVC" required="" placeholder="CVC"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-row">
+                                                            <div class="col-12"><button class="btn btn-success btn-block btn-lg" type="submit">Update Payment Info</button></div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="swiper-pagination"></div>
-                                    <div class="swiper-button-prev"></div>
-                                    <div class="swiper-button-next"></div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="row" style="height: 257px;margin-bottom: 378px;">
-                        <div class="col-md-4" style="background: rgb(255,255,255);box-shadow: 0px 0px 7px 4px #182628;margin-left: 70px;">
-                            <form method="post">
-                                <h2 class="text-center">Contact us</h2>
-                                <div class="form-group"><input class="form-control" type="text" name="name" placeholder="Name"><input class="form-control" type="text" name="name" placeholder="Email" style="margin-top: 17px;"></div>
-                                <div class="form-group"><textarea class="form-control" name="message" placeholder="Message" rows="14" style="height: 150px;"></textarea></div>
-                                <div class="form-group" style="text-align: center;"><button class="btn btn-primary" type="submit" style="background: #3b945e;">Send </button></div>
-                            </form>
-                        </div>
-                        <div class="col-md-4">
-                            <section class="newsletter-subscribe" style="background: rgb(255, 255, 255);box-shadow: 0px 0px 7px 4px #182628;width: 372px;height: 392px;margin-left: 208px;">
-                                <div class="container">
-                                    <div class="intro">
-                                        <h2 class="text-center">Subscribe for our Newsletter</h2>
-                                        <p class="text-center">Nunc luctus in metus eget fringilla. Aliquam sed justo ligula. Vestibulum nibh erat, pellentesque ut laoreet vitae. </p>
+                        <div class="col-lg-8">
+                            <div class="row mb-3 d-none">
+                                <div class="col">
+                                    <div class="card text-white bg-primary shadow">
+                                        <div class="card-body">
+                                            <div class="row mb-2">
+                                                <div class="col">
+                                                    <p class="m-0">Peformance</p>
+                                                    <p class="m-0"><strong>65.2%</strong></p>
+                                                </div>
+                                                <div class="col-auto"><i class="fas fa-rocket fa-2x"></i></div>
+                                            </div>
+                                            <p class="text-white-50 small m-0"><i class="fas fa-arrow-up"></i>&nbsp;5% since last month</p>
+                                        </div>
                                     </div>
-                                    <form class="form-inline" method="post" style="text-align: center;">
-                                        <div class="form-group"><input class="form-control" type="email" name="email" placeholder="Your Email" style="margin-bottom: 49px;"></div>
-                                    </form>
                                 </div>
-                                <div class="form-group" style="text-align: center;"><button class="btn btn-primary" type="submit" style="background: #3b945e;">Send </button></div>
-                            </section>
+                                <div class="col">
+                                    <div class="card text-white bg-success shadow">
+                                        <div class="card-body">
+                                            <div class="row mb-2">
+                                                <div class="col">
+                                                    <p class="m-0">Peformance</p>
+                                                    <p class="m-0"><strong>65.2%</strong></p>
+                                                </div>
+                                                <div class="col-auto"><i class="fas fa-rocket fa-2x"></i></div>
+                                            </div>
+                                            <p class="text-white-50 small m-0"><i class="fas fa-arrow-up"></i>&nbsp;5% since last month</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card shadow mb-3">
+                                        <div class="card-header py-3">
+                                            <p class="text-primary m-0 font-weight-bold">User Settings</p>
+                                        </div>
+                                        <div class="card-body">
+                                            <form>
+                                                <div class="form-row">
+                                                    <div class="col">
+                                                        <div class="form-group"><label for="username"><strong>Username</strong></label><input class="form-control" type="text" id="username" placeholder="user.name" name="username"></div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="form-group"><label for="email"><strong>Email Address</strong></label><input class="form-control" type="email" id="email" placeholder="user@example.com" name="email"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-row">
+                                                    <div class="col">
+                                                        <div class="form-group"><label for="first_name"><strong>First Name</strong></label><input class="form-control" type="text" id="first_name" placeholder="Example" name="first_name"></div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="form-group"><label for="last_name"><strong>Last Name</strong></label><input class="form-control" type="text" id="last_name" placeholder="Employee" name="last_name"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group"><button class="btn btn-primary btn-sm" type="submit">Save Settings</button></div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="card shadow">
+                                        <div class="card-header py-3">
+                                            <p class="text-primary m-0 font-weight-bold">Contact Settings</p>
+                                        </div>
+                                        <div class="card-body">
+                                            <form>
+                                                <div class="form-group"><label for="address"><strong>Address</strong></label><input class="form-control" type="text" id="address" placeholder="Sunset Blvd, 38" name="address"></div>
+                                                <div class="form-row">
+                                                    <div class="col">
+                                                        <div class="form-group"><label for="city"><strong>City</strong></label><input class="form-control" type="text" id="city" placeholder="Los Angeles" name="city"></div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="form-group"><label for="country"><strong>Country</strong></label><input class="form-control" type="text" id="country" placeholder="USA" name="country"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group"><button class="btn btn-primary btn-sm" type="submit">Save&nbsp;Settings</button></div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

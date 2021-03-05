@@ -39,7 +39,7 @@
                     <li class="nav-item"><a class="nav-link text-center" href="Management.html"><span>Management</span></a></li>
                     <li class="nav-item"></li>
                     <li class="nav-item"></li>
-                    <li class="nav-item"><a class="nav-link text-center" href="Donations.html"><span>Donations</span></a></li>
+                    <li class="nav-item"><a class="nav-link text-center active" href="Donations.html"><span>Donations</span></a></li>
                     <li class="nav-item"><a class="nav-link" href="Volunteer.html" style="text-align: center;"><span>Volunteer</span></a></li>
                     <li class="nav-item dropdown"><a class="dropdown-toggle nav-link text-center" aria-expanded="false" data-toggle="dropdown" href="#">Services</a>
                         <div class="dropdown-menu"><a class="dropdown-item" href="Internal.html">Internal</a><a class="dropdown-item" href="External.html">External</a><a class="dropdown-item" href="Rental.html">Rental</a></div>
@@ -106,55 +106,51 @@
                         </ul>
                     </div>
                 </nav>
-                <h2 style="margin-top: 23px;color: var(--white);text-align: center;padding-top: 20px;font-style: normal;font-weight: 800;text-shadow: 0px 0px 13px #3b945e;font-size: 64px;">Best Community Service</h2>
-                <div class="container" style="margin-left: 97px;margin-top: 65px;">
-                    <div class="row" style="margin-bottom: 193px;">
-                        <div class="col-md-12" style="margin-bottom: 90px;height: 292px;">
-                            <div class="simple-slider">
-                                <div class="swiper-container">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide" style="background: url(&quot;assets/img/homecare.jpg&quot;) center center / contain no-repeat;">
-                                            <h2 style="margin-top: 415px;color: #3b945e;text-align: center;padding-top: 20px;font-style: normal;font-weight: 800;text-shadow: 0px 0px 5px var(--light);font-size: 52px;">External Services</h2>
-                                        </div>
-                                        <div class="swiper-slide" style="background: url(&quot;assets/img/weddings.jpg&quot;) center center / contain no-repeat;">
-                                            <h2 style="margin-top: 415px;color: #3b945e;text-align: center;padding-top: 20px;font-style: normal;font-weight: 800;text-shadow: 0px 0px 5px var(--light);font-size: 52px;">Internal Services</h2>
-                                        </div>
-                                        <div class="swiper-slide" style="background: url(&quot;assets/img/spanish.jpg&quot;) center center / contain no-repeat;">
-                                            <h2 style="margin-top: 415px;color: #3b945e;text-align: center;padding-top: 20px;font-style: normal;font-weight: 800;text-shadow: 0px 0px 5px var(--light);font-size: 52px;">Rental Services</h2>
-                                        </div>
+                <h2 class="text-left" style="margin-top: -23px;color: var(--white);text-align: left;padding-top: 20px;margin-left: 27px;">Donations</h2>
+                <section class="features-blue" style="background: #65ccb8;height: 903px;">
+                    <div class="container">
+                        <div class="intro"></div>
+                    </div>
+                    <div style="height: 672px;margin-top: -41px;text-align: left;margin-left: auto;margin-right: auto;padding-left: 103px;">
+                        <div class="row .payment-dialog-row">
+                            <div class="col-12 col-md-4 offset-md-4">
+                                <div class="card credit-card-box" style="margin-top: 82px;margin-left: -76px;">
+                                    <div class="card-header">
+                                        <h3></h3>
+                                        <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-1"><label class="form-check-label" for="formCheck-1" style="color: #182628;">Anonymous</label></div>
                                     </div>
-                                    <div class="swiper-pagination"></div>
-                                    <div class="swiper-button-prev"></div>
-                                    <div class="swiper-button-next"></div>
+                                    <div class="card-body">
+                                        <form id="payment-form">
+                                            <div class="form-row">
+                                                <div class="col-12">
+                                                    <div class="form-group">
+                                                        <div class="input-group"><input class="form-control" type="tel" id="cardNumber" required="" placeholder="Valid Card Number">
+                                                            <div class="input-group-append"><span class="input-group-text"><i class="fa fa-credit-card"></i></span></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="col-7">
+                                                    <div class="form-group"><label for="cardExpiry"><span>expiration </span><span>EXP </span> date</label><input class="form-control" type="tel" id="cardExpiry" required="" placeholder="MM / YY" style="margin-top: -33px;"></div>
+                                                </div>
+                                                <div class="col-5 pull-right">
+                                                    <div class="form-group"><label for="cardCVC">cv code</label><input class="form-control" type="tel" id="cardCVC" required="" placeholder="CVC" style="margin-top: -33px;"></div>
+                                                </div>
+                                                <div class="col-5 pull-right">
+                                                    <div class="form-group"><label for="cardCVC">cv code</label><input class="form-control" type="tel" id="cardCVC" required="" placeholder="Amount" style="margin-top: -32px;"><input class="form-control" type="tel" id="cardCVC-1" placeholder="Name (Not Required)" style="width: 302.2px;margin-top: 15px;margin-bottom: 16px;"></div>
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="col-12"><button class="btn btn-success btn-block btn-lg" type="submit">Place Donation</button></div>
+                                            </div>
+                                        </form>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row" style="height: 257px;margin-bottom: 378px;">
-                        <div class="col-md-4" style="background: rgb(255,255,255);box-shadow: 0px 0px 7px 4px #182628;margin-left: 70px;">
-                            <form method="post">
-                                <h2 class="text-center">Contact us</h2>
-                                <div class="form-group"><input class="form-control" type="text" name="name" placeholder="Name"><input class="form-control" type="text" name="name" placeholder="Email" style="margin-top: 17px;"></div>
-                                <div class="form-group"><textarea class="form-control" name="message" placeholder="Message" rows="14" style="height: 150px;"></textarea></div>
-                                <div class="form-group" style="text-align: center;"><button class="btn btn-primary" type="submit" style="background: #3b945e;">Send </button></div>
-                            </form>
-                        </div>
-                        <div class="col-md-4">
-                            <section class="newsletter-subscribe" style="background: rgb(255, 255, 255);box-shadow: 0px 0px 7px 4px #182628;width: 372px;height: 392px;margin-left: 208px;">
-                                <div class="container">
-                                    <div class="intro">
-                                        <h2 class="text-center">Subscribe for our Newsletter</h2>
-                                        <p class="text-center">Nunc luctus in metus eget fringilla. Aliquam sed justo ligula. Vestibulum nibh erat, pellentesque ut laoreet vitae. </p>
-                                    </div>
-                                    <form class="form-inline" method="post" style="text-align: center;">
-                                        <div class="form-group"><input class="form-control" type="email" name="email" placeholder="Your Email" style="margin-bottom: 49px;"></div>
-                                    </form>
-                                </div>
-                                <div class="form-group" style="text-align: center;"><button class="btn btn-primary" type="submit" style="background: #3b945e;">Send </button></div>
-                            </section>
-                        </div>
-                    </div>
-                </div>
+                </section>
             </div>
             <footer class="bg-white sticky-footer">
                 <div class="container my-auto">
